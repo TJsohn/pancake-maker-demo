@@ -63,9 +63,9 @@ function loadOrders() {
     );
     const extras = createParagraph(
       "Extras",
-      Array.isArray(order.extras) && order.extras.length > 0
+      order.extras && Array.isArray(order.extras) && order.extras.length > 0
         ? order.extras.join(", ")
-        : "None"
+        : order.extras || "None"
     );
 
     const delivery = createParagraph("Delivery", order.deliveryMethod);
