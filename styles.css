@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 #header {
   position: relative;
@@ -6,9 +6,12 @@
 }
 
 body {
-  font-family: "Roboto", serif;
-  background-color: #f9f9f9;
-  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: cornflowerblue;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -26,7 +29,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: #bb9df6;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -45,6 +48,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100vh;
+  border-radius: 150px;
 }
 
 .form-container {
@@ -59,8 +63,8 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #baf00a;
-  color: #8e1d42;
+  background-color: #c9fb01;
+  color: rgb(253, 1, 135);
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -68,17 +72,22 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 40px;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 h2 {
-  font-weight: bolder;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 5px;
 }
 
 h3 {
@@ -89,6 +98,69 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
+#customerName {
+  padding: 8px;
+  margin-top: 10px;
+  width: 20vw;
+}
+
+#type {
+  padding: 5px;
+  width: 20vw;
+}
+.custom-button {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.custom-button:focus {
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  text-decoration: none;
+  background-color: #6c5ce7;
+  transform: scale(1.05);
+}
+
+.custom-button:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.custom-button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 12px 50px;
+  }
+}
+
 select,
 label {
   display: block;
@@ -96,26 +168,11 @@ label {
   font-size: 18.72px;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.blink {
-  animation: blink 0.3s ease-in-out 2;
-}
-
 #searchInput {
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 80px;
   width: 100%;
   max-width: 300px;
   border-radius: 5px;
@@ -127,6 +184,7 @@ label {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-right: 40px;
   width: 100%;
 }
 

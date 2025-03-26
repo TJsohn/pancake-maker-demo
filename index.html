@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Pancake Maker</title>
+    <title>TJ's Pancake</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,7 +15,7 @@
       </div>
 
       <div class="form-container">
-        <h2>Customize Your Pancake</h2>
+        <h2>TJ's Pancake</h2>
 
         <form onsubmit="return validateOrderForm()" id="pancakeForm">
           <!-- Customer Name -->
@@ -93,7 +93,9 @@
           <h3>Total Price: <span id="totalPriceDisplay">5€</span></h3>
 
           <!-- See Order Button -->
-          <button type="button" id="seeOrder">See Order</button>
+          <button type="button" class="custom-button" id="seeOrder">
+            See Order
+          </button>
         </form>
 
         <!-- Order Summary Display -->
@@ -102,9 +104,13 @@
           <p id="summaryText">Your order details will appear here.</p>
         </div>
         <!-- Confirm Order Button -->
-        <button type="button" id="confirmOrderButton">Confirm Order</button>
+        <button type="button" class="custom-button" id="confirmOrderButton">
+          Confirm Order
+        </button>
         <!-- All Orders Button -->
-        <button type="button" id="allOrdersButton">View All Orders</button>
+        <button type="button" class="custom-button" id="allOrdersButton">
+          View All Orders
+        </button>
       </div>
     </div>
     <script src="script.js"></script>

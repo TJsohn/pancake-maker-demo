@@ -41,7 +41,12 @@ function loadOrders() {
     return;
   }
 
-  filteredOrders.forEach((order) => {
+  const sortedOrders = filteredOrders.sort((a, b) => {
+    const statusOrder = { waiting: 0, ready: 1, delivered: 2 };
+    return statusOrder[a.status] - statusOrder[b.status];
+  });
+
+  sortedOrders.forEach((order) => {
     let orderCard = document.createElement("div");
 
     const orderStatus = order.status || "waiting";

@@ -34,15 +34,6 @@ const changeHandler = () => {
   totalPriceBanner.textContent = `${totalPrice}€`;
 };
 
-/*totalPriceBanner.classList.add("blink");
-  totalPriceDisplay.classList.add("blink");*/
-
-/*setTimeout(() => {
-
-    totalPriceBanner.classList.remove("blink");
-    totalPriceDisplay.classList.remove("blink");
-  }, 600);*/
-
 pancakeForm.addEventListener("change", changeHandler);
 
 const getToppings = () => {
